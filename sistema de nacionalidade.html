@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+
+<body>
+    <h1> Treinando CONDIÇÕES com JavaScript</h1>
+
+    <h3> Organização de nacionalidade</h3>
+
+    Informe seu pais de nascimento <input type="text" name="txtorigem " id="txtorigem">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="p">
+
+    </div>
+
+
+    <script>
+        function verificar() {
+
+            var p = window.document.querySelector('div#p')
+            var nacao = txtorigem.value
+
+            if (nacao == 'Brasil') {
+                p.innerHTML = `Seus pais é ${nacao} `
+                p.innerHTML = `Você é brasileiro(a)`
+            } else if (nacao != "Brasil") {
+                p.innerHTML = `Seus pais é ${nacao} , `
+                p.innerHTML += `você é estrangeiro!`
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
